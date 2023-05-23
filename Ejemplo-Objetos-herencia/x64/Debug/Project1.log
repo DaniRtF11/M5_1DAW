@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\M5\Ejemplo-Objetos-herencia\Source.cpp(48,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Project1.vcxproj -> D:\M5\Ejemplo-Objetos-herencia\x64\Debug\Project1.exe
