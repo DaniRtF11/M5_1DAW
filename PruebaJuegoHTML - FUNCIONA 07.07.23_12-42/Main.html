@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEB GAME 1</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <table id="tablero"></table>
+  <script src="funciones.js"></script>
+  <script>
+    function crearTabla() {
+      var tablaHTML = '';
+
+      for (var y = 0; y < tamañoY; y++) {
+        tablaHTML += '<tr>';
+
+        for (var x = 0; x < tamañoX; x++) {
+          tablaHTML += '<td><img src="' + arrayTablero[x][y] + '"></td>';
+        }
+
+        tablaHTML += '</tr>';
+      }
+
+      document.getElementById('tablero').innerHTML = tablaHTML;
+    }
+
+    // Llamar a la función para crear la tabla
+    crearTabla();
+  </script>
+</body>
+</html>

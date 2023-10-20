@@ -1,0 +1,26 @@
+body {
+  background-image: url('fondo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 120px;
+  height: 120px;
+  border: 9px solid rgb(182, 181, 181);
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
+
+td img {
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
+  margin: auto;
+}

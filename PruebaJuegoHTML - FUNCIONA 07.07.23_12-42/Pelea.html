@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pelea</title>
+  <link rel="stylesheet" type="text/css" href="estilosPelea.css">
+</head>
+<body onload="actualizarHP(heroe.hp, enemigos[enemigoEncontrado].hp)">
+  <div id="mensajeInicial">
+    <h1>HAS ENCONTRADO A UN ENEMIGO!!</h1>
+  </div>
+
+  <div class="contenedor-imagenes">
+    <div class="imagen-con-hp">
+      <img src="heroe.png" alt="Heroe" class="imagen">
+      <p id="hpHeroe" class="hp-text"></p>
+    </div>
+    <div class="imagen-con-hp">
+      <img src="enemigo.png" alt="Enemigo" class="imagen">
+      <p id="hpEnemigo" class="hp-text"></p>
+    </div>
+  </div>
+
+  <div id="botones">
+    <button id="botonAtaque1" onclick="ataque1()">PUÑOS</button>
+    <button id="botonAtaque2" onclick="ataque2()">ESPADA</button>
+    <button id="botonAtaque3" onclick="ataque3()">MAGIA</button>
+  </div>
+
+  <script src="funciones.js"></script>
+</body>
+</html>
+
+<script>
+  window.onload = function() {
+    var heroeHP = heroe.hp;
+    var enemigoEncontrado = localStorage.getItem('enemigoEncontrado');
+    var enemigoHP = enemigos[enemigoEncontrado].hp;
+    actualizarHP(heroeHP, enemigoHP);
+  };
+</script>
+

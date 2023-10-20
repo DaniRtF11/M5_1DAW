@@ -1,0 +1,112 @@
+body {
+  background-image: url("fondo.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensajeInicial {
+  color: rgb(248, 212, 9);
+  font-weight: bold;
+  border: 8px solid gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.imagen-con-hp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.imagen {
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+
+.hp-text {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#hpHeroe {
+  border: 3px solid white;
+  width: 60px;
+}
+
+#hpEnemigo {
+  border: 3px solid white;
+  width: 60px;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  margin-right: 30px;
+  height: 70px;
+  width: 100px;
+  font-weight: bold;
+  background-color: rgb(209, 211, 212);
+  border: 8px solid greenyellow;
+}
+
+.desplazamiento-derecha {
+  transform: translateX(400px);
+  transition: transform 1s;
+}
+
+.desplazamiento-izquierda {
+  transform: translateX(0);
+  transition: transform 1s;
+}
+
+
+.parpadeo-rojo {
+  animation: parpadeo-rojo 0.5s infinite;
+}
+
+.parpadeo-lila {
+  animation: parpadeo-lila 0.5s infinite;
+}
+
+@keyframes parpadeo-rojo {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes parpadeo-lila {
+  0% {
+    background-color: rgb(212, 0, 255);
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgb(212, 0, 255);
+  }
+}
+
+
+
